@@ -1,4 +1,6 @@
-# Jev Trader — Product Spec
+# Jev Trader — Original Public Demo Spec (Historical)
+
+This records the original demo's specification, including its non-goals; it is not permission for real trading or indefinite operation. Current DRY RUN (DRY_RUN=true / MODEL=mock), approval requirements, execution limits and safety stops remain unchanged. See the [historical-reference notice in CLAUDE.md](CLAUDE.md#original-demo-brief-historical-reference).
 
 ## One line
 A live public dashboard showing an AI make a real trade decision on Monad every 300 ms block.

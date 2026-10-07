@@ -1,0 +1,13 @@
+{
+  "src/signals/engine.ts": "dd653db68e70b2af3d2b2b631201998ad14aef3c5faaa2c6e02b3b0fdf2f9773",
+  "src/signals/types.ts": "9f1ec61bea2cbae2e480fdd07063b0258f5efb0113573dfee62096e7c5e43907",
+  "src/signals/adapter.ts": "a36acc57edc2f5eb785bef9ae098c1ca30efec5278df98572b04a3599d322f6d",
+  "src/market-data/adapter.ts": "26ecacb4547ee5cd429e4d586091fdbd81d63a5b78276754ed4496436ff69c9a",
+  "src/market-data/types.ts": "5d6725eccf828b4a7e5e5b76837866b502ae6c90a97fe0db25d18b53afa11cc7",
+  "src/market-data/candles.ts": "562c72bf23245f2a1acbfb0a3b169ba38a694aa97d257333878dc2b854ecba78",
+  "src/market-data/indicators.ts": "5326b56ec5c11ad5e579befa1a69083438306ef732b568281f78ac0585bdb1d5",
+  "src/market-data/sr-candidates.ts": "cdb6b11aededa400e9348825f2fad01dd5482e5a9e56fe7b6d66209d2bc81874",
+  "src/market-data/sr-replay.ts": "d3796a4b730ff7ddae0b305f10f69840d0798ffd28a18a5cd0acfd9db7401977",
+  "src/market-data/phase-b.ts": "fb330423bd5d269a7d991eb6c24ffb43aef4d1d4f94a8445ec8417f4d923bc5c",
+  "src/market-data/important-sr.ts": "b498b3137ef53845cb424da4f7a4659ee2aaf2b4819d87751bf45744d5490a2d"
+}

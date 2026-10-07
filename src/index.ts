@@ -5,10 +5,14 @@ import { createModel } from "./model";
 import { Trader } from "./trader";
 import { log10 } from "./book";
 import { startServer } from "./server";
+import { createSignalObserver } from "./signals/observer";
+import { createMarketDataFeed } from "./market-data/feed";
 
 const market = new Market();
 await market.init();
 const model = createModel();
+const signals = createSignalObserver({ market: config.market, dryRun: config.dryRun, model: model.name,
+  enrich: config.dryRun && model.name === "mock" ? createMarketDataFeed(config.market) : undefined });
 
 const server = startServer(
   { model: model.name, wallet: market.address, dryRun: config.dryRun, market: config.market, startedAt: Date.now() },
@@ -18,6 +22,7 @@ const trader = new Trader(
   market,
   model,
   (e, t) => {
+    signals.observe(e);
     server.broadcast(e);
     if (e.decision && !e.decision.late) {
       const p = e.decision.probabilities;

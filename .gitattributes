@@ -1,0 +1,12 @@
+# Preserve frozen-rule bytes; exact paths from src/forward-observation/frozen-rules.json.
+/src/signals/engine.ts -text
+/src/signals/types.ts -text
+/src/signals/adapter.ts -text
+/src/market-data/adapter.ts -text
+/src/market-data/types.ts -text
+/src/market-data/candles.ts -text
+/src/market-data/indicators.ts -text
+/src/market-data/sr-candidates.ts -text
+/src/market-data/sr-replay.ts -text
+/src/market-data/phase-b.ts -text
+/src/market-data/important-sr.ts -text

@@ -1,3 +1,10 @@
+> **HISTORICAL / DO NOT EXECUTE — 復旧時の安全境界**
+>
+> このREADMEにはupstream demo由来の歴史的説明・手順が含まれています。実売買の許可ではありません。
+> README内のlive trading、wallet、approval、dry-encode等の手順・コマンドを、現在の運用指示として実行しないでください。
+> 現在の安全境界は[CLAUDE.md](CLAUDE.md)、[SPEC.md](SPEC.md)、[RECOVERY.md](RECOVERY.md)を優先します。
+> `DRY_RUN=false`、実注文、秘密鍵/APIキー利用、token approval、write RPC、資金移動、外部通信、pushは禁止です。
+
 # jev-trader
 
 One decision every Monad block. A TypeSafe Jev model watches the Kuru MON-USDC order book and answers buy or sell every ~300 ms. Every block posts a real post-only limit order on that side, one tick inside the touch, replacing the last one. Fills happen when a taker hits it, so the bot earns the spread instead of paying it. A small server streams every block to the dashboard.

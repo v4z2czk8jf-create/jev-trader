@@ -110,9 +110,13 @@ bun --hot ./index.ts
 
 For more information, read the Bun API docs in `node_modules/bun-types/docs/**.mdx`.
 
-## The core message (do not break this)
+## Original demo brief (historical reference)
 
-The demo exists to support this tweet. Every design or strategy change must keep all four claims true:
+The original demo existed to support this tweet. Keeping all four claims true was a requirement of that demo, not a requirement for current changes.
+
+This section preserves the original demo specification. It does not impose a current duty or grant permission to use a real wallet, execute real trades, or place an order every block. Current DRY RUN, approval requirements, execution limits and safety stops remain unchanged.
+
+Original demo message:
 
 > I built a trading bot with Jev!
 >
@@ -122,4 +126,6 @@ The demo exists to support this tweet. Every design or strategy change must keep
 >
 > Demo link: https://jev-trader.vercel.app
 
-Non-negotiables: Jev makes the buy/sell call (not code), from the price feed; real trades from a real wallet; an order placed on Kuru's on-chain book every 300 ms block; the demo is the live dashboard. Never decide every N blocks. No middle dots, em dashes or en dashes in any rendered text. No blinking or pulsing indicators.
+Mandatory conditions of the original demo (historical quotation, not current operating instructions):
+
+> Non-negotiables: Jev makes the buy/sell call (not code), from the price feed; real trades from a real wallet; an order placed on Kuru's on-chain book every 300 ms block; the demo is the live dashboard. Never decide every N blocks. No middle dots, em dashes or en dashes in any rendered text. No blinking or pulsing indicators.
