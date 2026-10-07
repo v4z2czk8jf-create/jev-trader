@@ -1,4 +1,4 @@
-# Preserve frozen-rule bytes; exact paths from src/forward-observation/frozen-rules.json.
+# Frozen-rule byte protection (frozen-rules.json).
 /src/signals/engine.ts -text
 /src/signals/types.ts -text
 /src/signals/adapter.ts -text
@@ -10,3 +10,27 @@
 /src/market-data/sr-replay.ts -text
 /src/market-data/phase-b.ts -text
 /src/market-data/important-sr.ts -text
+
+# Implementation fingerprint byte protection (runner.ts buildFingerprint).
+/src/forward-observation/archive.ts -text
+/src/forward-observation/capacity-report.ts -text
+/src/forward-observation/capacity.test.ts -text
+/src/forward-observation/collector.ts -text
+/src/forward-observation/config.ts -text
+/src/forward-observation/controller.ts -text
+/src/forward-observation/execution.ts -text
+/src/forward-observation/forward.test.ts -text
+/src/forward-observation/frozen-rules.json -text
+/src/forward-observation/hardening-benchmark.ts -text
+/src/forward-observation/hardening.test.ts -text
+/src/forward-observation/journal.ts -text
+/src/forward-observation/minute-source.ts -text
+/src/forward-observation/provenance.test.ts -text
+/src/forward-observation/provenance.ts -text
+/src/forward-observation/raw-storage.ts -text
+/src/forward-observation/readiness.test.ts -text
+/src/forward-observation/runner.ts -text
+/src/forward-observation/storage-codec.ts -text
+/src/forward-observation/storage-policy.ts -text
+/src/market-data/rpc-source.ts -text
+/src/market-data/history-store.ts -text
